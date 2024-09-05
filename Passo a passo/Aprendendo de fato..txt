@@ -1,0 +1,37 @@
+# Passo a Passo Git e GitHub 
+
+1. Iniciar repositório local:
+   git init
+
+2. Criar arquivo README e adicionar:
+   git add README.md
+
+3. Fazer o primeiro commit:
+   git commit -m "Primeiro commit"
+
+4. Adicionar o repositório remoto:
+   git remote add origin https://github.com/SeuUsuario/NomeDoRepositorio.git
+
+5. Fazer o push para o GitHub:
+   git push -u origin master
+
+6. Se aparecer o erro "remote origin already exists":
+   git remote remove origin
+   git remote add origin https://github.com/SeuUsuario/NomeDoRepositorio.git
+   git push -u origin master
+
+7. Adicionar novas alterações:
+   git add .
+   git commit -m "Descrição das alterações"
+   git push
+
+8. Clonar o repositório:
+   git clone https://github.com/SeuUsuario/NomeDoRepositorio.git
+
+9. Criar e alternar para uma nova branch:
+   git checkout -b nova-feature
+
+10. Fazer o merge de uma branch com a master:
+    git checkout master
+    git merge nova-feature
+    git push origin master
